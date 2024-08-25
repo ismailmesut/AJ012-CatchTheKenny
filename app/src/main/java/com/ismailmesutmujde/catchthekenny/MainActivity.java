@@ -2,11 +2,14 @@ package com.ismailmesutmujde.catchthekenny;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView25;
 
     ImageView[] imageArray;
+
+    Handler handler;
+    Runnable runnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,8 +115,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideImages() {
-        for (ImageView image : imageArray) {
-            image.setVisibility(View.INVISIBLE);
-        }
+
+        handler = new Handler();
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                for (ImageView image : imageArray) {
+                    image.setVisibility(View.INVISIBLE);
+                }
+                Random random = new Random();
+                int i = random.nextInt(25);
+                imageArray[i].setVisibility(View.VISIBLE);
+
+                // delayMillis image'ın hızını ayarlar.
+                handler.postDelayed(this,500);
+            }
+        };
+
+        handler.post(runnable);
     }
 }
