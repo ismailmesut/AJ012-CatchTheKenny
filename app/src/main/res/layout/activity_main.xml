@@ -10,17 +10,17 @@
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="400dp"
-        android:layout_height="512dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/timeText">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="0"
             app:srcCompat="@drawable/kenny" />
@@ -29,6 +29,7 @@
             android:id="@+id/imageView2"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="0"
             app:srcCompat="@drawable/kenny" />
@@ -37,6 +38,7 @@
             android:id="@+id/imageView3"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="0"
             app:srcCompat="@drawable/kenny" />
@@ -45,6 +47,7 @@
             android:id="@+id/imageView4"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="3"
             app:layout_row="0"
             app:srcCompat="@drawable/kenny" />
@@ -53,6 +56,7 @@
             android:id="@+id/imageView5"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="4"
             app:layout_row="0"
             app:srcCompat="@drawable/kenny" />
@@ -61,6 +65,7 @@
             android:id="@+id/imageView6"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="1"
             app:srcCompat="@drawable/kenny" />
@@ -69,6 +74,7 @@
             android:id="@+id/imageView7"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="1"
             app:srcCompat="@drawable/kenny" />
@@ -77,6 +83,7 @@
             android:id="@+id/imageView8"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="1"
             app:srcCompat="@drawable/kenny" />
@@ -85,6 +92,7 @@
             android:id="@+id/imageView9"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="3"
             app:layout_row="1"
             app:srcCompat="@drawable/kenny" />
@@ -93,6 +101,7 @@
             android:id="@+id/imageView10"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="4"
             app:layout_row="1"
             app:srcCompat="@drawable/kenny" />
@@ -101,6 +110,7 @@
             android:id="@+id/imageView11"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="2"
             app:srcCompat="@drawable/kenny" />
@@ -109,6 +119,7 @@
             android:id="@+id/imageView12"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="2"
             app:srcCompat="@drawable/kenny" />
@@ -117,6 +128,7 @@
             android:id="@+id/imageView13"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="2"
             app:srcCompat="@drawable/kenny" />
@@ -125,6 +137,7 @@
             android:id="@+id/imageView14"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="3"
             app:layout_row="2"
             app:srcCompat="@drawable/kenny" />
@@ -133,6 +146,7 @@
             android:id="@+id/imageView15"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="4"
             app:layout_row="2"
             app:srcCompat="@drawable/kenny" />
@@ -141,6 +155,7 @@
             android:id="@+id/imageView16"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="3"
             app:srcCompat="@drawable/kenny" />
@@ -149,6 +164,7 @@
             android:id="@+id/imageView17"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="3"
             app:srcCompat="@drawable/kenny" />
@@ -157,6 +173,7 @@
             android:id="@+id/imageView18"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="3"
             app:srcCompat="@drawable/kenny" />
@@ -165,6 +182,7 @@
             android:id="@+id/imageView19"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="3"
             app:layout_row="3"
             app:srcCompat="@drawable/kenny" />
@@ -173,6 +191,7 @@
             android:id="@+id/imageView20"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="4"
             app:layout_row="3"
             app:srcCompat="@drawable/kenny" />
@@ -181,6 +200,7 @@
             android:id="@+id/imageView21"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="4"
             app:srcCompat="@drawable/kenny" />
@@ -189,6 +209,7 @@
             android:id="@+id/imageView22"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="4"
             app:srcCompat="@drawable/kenny" />
@@ -197,6 +218,7 @@
             android:id="@+id/imageView23"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="4"
             app:srcCompat="@drawable/kenny" />
@@ -205,6 +227,7 @@
             android:id="@+id/imageView24"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="3"
             app:layout_row="4"
             app:srcCompat="@drawable/kenny" />
@@ -213,6 +236,7 @@
             android:id="@+id/imageView25"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:onClick="increaseScore"
             app:layout_column="4"
             app:layout_row="4"
             app:srcCompat="@drawable/kenny" />
@@ -221,10 +245,9 @@
     </androidx.gridlayout.widget.GridLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/timeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Time : 60"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
@@ -233,11 +256,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/scoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:text="Score : 0"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
